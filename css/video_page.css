@@ -1,0 +1,27 @@
+
+.video_area{
+    margin: 100px 0;
+}
+
+.video-playlist {
+    height: 406px;
+    overflow-y: scroll;
+}
+.video-playlist .mt-0{
+    margin: 0;
+    font-size: 20px;
+    line-height: 30px;
+}
+.video-playlist .media-object {
+    width: 150px;
+    height: 100px;
+}
+.video-tabs-container {
+    height: 450px;
+}
+
+.video_area h5{
+    margin-left: 15px;
+}
+  
+  

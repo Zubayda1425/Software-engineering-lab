@@ -1,0 +1,68 @@
+
+.books{
+    margin: 50px 0;
+}
+
+.single_book span{
+    display: block;
+}
+
+.single_book{
+    text-align: center;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 15px;
+    margin-bottom: 25px;
+}
+
+.book_title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #F8B400;
+    margin: 20px;
+}
+
+.book_author {
+    font-size: 18px;
+    font-weight: normal;
+    color: #222;
+    font-style: italic;
+}
+
+.book_price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #222;
+}
+
+.search_option{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.search_option input[type=text] {
+    padding: 6px 230px 6px 15px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: 2px solid #F8B400;
+}
+
+.search_option button {
+    padding: 6px 15px;
+    margin-top: 8px;
+    background: #F8B400;
+    font-size: 17px;
+    border: 2px solid #F8B400;
+    cursor: pointer;
+    margin-left: -5px;
+  }
+
+  .book_image{
+    border: 1px solid gray;
+  }
+
+
+
+
+
+
+

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="stylee.css">
+    <link rel="stylesheet" href="css/responsivee.css">
+
+
+</head>
+
+<body>
+    <!-- Header Area Start -->
+    <header class="fs-4">
+        <div class="header_area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="logo_araa">
+                            <a href="index.php"><img style="height:50px; width:80px;" src="logo.png" alt="Logo"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-10">
+                        <div class="buttons">
+                            <a href="user.php">Users</a>
+                            <a href="book.php" class="cp">Book</a>
+                            <a href="course.php">Course</a>
+                            <a href="video.php">Video</a>
+                            <a href="sample_question.php">sample Question</a>
+                            <a href="index.php">LogOut</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header Area End -->
+
+
+    <!-- Data -->
+
+
+    <!-- Button trigger modal -->
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="exampleModalCenterTitle">New Book Info</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div>
+                        <div class="employee_info">
+
+                            <form class="ui form" method=get action=book_insert_handler.php>
+
+                                <p>
+
+                                    Book ID: <input type="text" name="Book_ID"> <br>
+
+                                <P>
+
+                                    Book Title: <input type="text" name="Book_Name"> <br>
+
+                                <p>
+
+
+                                    Department: <input type="text" name="Department"> <br>
+
+                                <p>
+
+                                    Price: <input type="text" name="Price"> <br>
+
+                                <p>
+
+                                    Image Link:<input type="file" id="myFile" name="filename"><br>
+
+                                <p>
+
+                                    PDF Link: <input type="file" id="myFile" name="filename"> <br>
+
+                                <p>
+
+                                <p>
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <input class="ui big right floated blue button" type=submit value="Insert Entry">
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="hero_section">
+        <div class="container">
+            <div class="row">
+                <div>
+
+                    <div class="books_info" style=" padding-bottom: 25px;">
+
+
+                        <h1>Books Information</h1>
+
+                        <div class="ui text container">
+
+
+                            <table class='ui table text-center table-light table-striped-columns'>
+                                <thead class="fs-5">
+                                    <th>Book ID</th>
+                                    <th>Book Title</th>
+                                    <th>Department</th>
+                                    <th>Price</th>
+                                    <th>Image Link</th>
+                                    <th>PDF Link</th>
+                                    <th>Option</th>
+                                    <th>Update</th>
+                                </thead>
+
+
+                                <tr>
+                                    <td> $Book_ID </td>
+                                    <td> $Book_Name </td>
+                                    <td> $Department </td>
+                                    <td> $Price </td>
+                                    <td><a href="book.jpeg" class="d-flex
+                                        justify-content-center"><i class="fa-solid fa-image fs-4"></i> </a> </td>
+                                    <td>
+                                        <a href="Week 3 - Git _ GitHub.pdf" class="d-flex
+                                            justify-content-center"><i class="fa-solid fa-file-pdf fs-4"></i></a>
+                                    </td>
+                                    <td> <a style='color: red;' href='books_delete.php?id=$Book_ID'>Delete</a> </td>
+                                    <td> <a style='color: blue;' href='book_update.php?id=$Book_ID'>Edit</a> </td>
+                                </tr>
+
+
+                            </table>
+
+                            <button type="button" class="btn btn-outline-danger fw-bold fs-4" data-toggle="modal"
+                                data-target="#exampleModalCenter">
+                                Launch New Book
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- Footer Area Start -->
+
+    <footer class="footer_area" style="border-top: 3px solid black;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <a href="index.html"><img src="logo.png" style="height:50px; width:80px;" alt="UIU edu"></a>
+                </div>
+                <div class="col-md-6">
+                    <p>@ Copyright reserved to <a href="index.html">uiuedu.com</a> Crafted by <span>Group2</span> </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Footer Area End -->
+
+
+    <!-- Scripts -->
+    <script> src = "https://kit.fontawesome.com/7150fbc846.js" </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>

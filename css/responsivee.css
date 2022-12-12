@@ -1,0 +1,112 @@
+
+/* Normal desktop */
+@media (min-width: 992px) and (max-width: 1920px) {
+
+    .ui.table thead th{
+        background: #feefdc;
+        color: rgb(7, 7, 7);
+      }
+}
+
+/* Large Mobile :480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+    .hero_section h2{
+        font-size: 28px;
+    }
+
+    .facilities{
+        padding: 20px 10px;
+    }
+
+    .all_facilities{
+        display: block;
+        margin-top: 0;
+    } 
+    .single_facility{
+        margin-bottom: 20px;
+    }
+
+    .hero_section{
+        padding: 50px 10px;
+        padding-bottom: 0;
+    }
+    .all_subscriptions{
+        padding: 20px 10px;
+    }
+
+    .footer_area{
+        padding: 20px 10px;
+    }
+
+    .footer_area img{
+        margin-bottom: 20px;
+    }
+
+    /* Menu Responsive */
+
+    .buttons {
+        text-align: right;
+        margin-top: 30px;
+    }
+
+    .buttons a {
+        display: block;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+}
+
+
+/* small mobile :320px. */
+@media (max-width: 767px) {
+
+    .hero_section h2{
+        font-size: 28px;
+    }
+    
+    .facilities{
+        padding: 20px 10px;
+    }
+
+    .all_facilities{
+        display: block;
+        margin-top: 0;
+    } 
+    .single_facility{
+        margin-bottom: 20px;
+    }
+
+    .hero_section{
+        padding: 50px 10px;
+        padding-bottom: 0;
+    }
+    .all_subscriptions{
+        padding: 20px 10px;
+    }
+
+    .footer_area{
+        padding: 20px 10px;
+    }
+
+    .footer_area img{
+        margin-bottom: 20px;
+    }
+
+    /* Menu Responsive */
+
+    .buttons {
+        text-align: right;
+        margin-top: 30px;
+    }
+
+    .buttons a {
+        display: block;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    
+}
+
